@@ -1,6 +1,6 @@
 <script src="https://cdn.jsdeliver.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js></script>
-             <script>
+<script>
              window.onload = function(){
              init:function(){
              var marker = this.el;
@@ -11,12 +11,44 @@
              "markerFound",
              function(){
              this.vid.play();
-             }.bind(this)
-             );
-             }
-             });
-             };
+    }.bind(this)
+   );
+  }
+ });
+};
              </script>
                           
 <style>
+       
+                          
+                          <body style="margin : 0px; overflow: hidden;">
+                          <div class="arjs-loader">
+                                                  <div>Loading, please wait...</div>
+                                                  </div>
+                                                  <a-scene
+                                                  vr-mode-ui="enabled: false;"
+                                                  renderer="antialias:true; alpha:true; precision: mediump;"
+                                                  embedded
+                                                  arjs="tracingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+                                                  >
+<a-assets>
+<video
+ src="https://cors-anywhere.herokuapp.com/https://www.w3schools.com/html/mov_bbb.mp4"
+preload="auto
+        id="vid"
+        response-type="arraybuffer"
+        loop
+        crossorigin
+        webkit-playsinline
+        autoplay
+        muted
+        playsinline
+        ></video>
+  </a-assets>
+  
+  <a-nft
+  videohandler
+        
+                                                                                     
+
                           
