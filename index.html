@@ -20,21 +20,20 @@
                           
 <style>
        
-                          
-                          <body style="margin : 0px; overflow: hidden;">
-                          <div class="arjs-loader">
-                                                  <div>Loading, please wait...</div>
-                                                  </div>
-                                                  <a-scene
-                                                  vr-mode-ui="enabled: false;"
-                                                  renderer="antialias:true; alpha:true; precision: mediump;"
-                                                  embedded
-                                                  arjs="tracingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-                                                  >
-<a-assets>
-<video
- src="https://cors-anywhere.herokuapp.com/https://www.w3schools.com/html/mov_bbb.mp4"
-preload="auto
+<body style="margin : 0px; overflow: hidden;">
+  <div class="arjs-loader">
+    <div>Loading, please wait...</div>
+  </div>
+  <a-scene
+     vr-mode-ui="enabled: false;"
+     renderer="antialias:true; alpha:true; precision: mediump;"
+     embedded
+     arjs="tracingMethod: best; sourceType: webcam;debugUIEnabled: false;"
+>
+ <a-assets>
+  <video
+        src="https://github.com/MTLightCollective/ARJSMTLIGHT/blob/main/BBOYWEBM.webm"
+        preload="auto
         id="vid"
         response-type="arraybuffer"
         loop
