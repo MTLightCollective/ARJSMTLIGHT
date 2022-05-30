@@ -49,26 +49,26 @@
         renderer='antialias: true; alpha: true; precision: mediump;'
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-assets>
-  		<video src="SAMURAI.webm"
-                preload="auto" id="vid" response-type="arraybuffer" loop
-                crossorigin webkit-playsinline autoplay muted playsinline>
-            </video>
-  </a-assets>
-  
-	<a-nft
-		  videohandler
-		  type="nft"
-		  src="https://github.com/MTLightCollective/ARJSMTLIGHT/NFT/cropped"
-		  smooth="true"
-		  smoothcount="10"
-		  smoothtolerance="0.01"
-		  smooththreshold="5"
-		  >
-		    <a-video src="#vid" position="50 150 -100" width="300" height="175">
-		      </a-video>
-	</a-nft>
-  		<a-entity camera><a/entity>
+		<a-assets>
+			<video src="SAMURAI.webm"
+			preload="auto" id="vid" response-type="arraybuffer" loop
+			crossorigin webkit-playsinline autoplay muted playsinline>
+		    	</video>
+		</a-assets>
+
+		<a-nft
+			  videohandler
+			  type="nft"
+			  src="https://github.com/MTLightCollective/ARJSMTLIGHT/NFT/cropped"
+			  smooth="true"
+			  smoothcount="10"
+			  smoothtolerance="0.01"
+			  smooththreshold="5"
+			  >
+			<a-video src="#vid" position="50 150 -100" width="300" height="175">
+			</a-video>
+		</a-nft>
+		<a-entity camera><a/entity>
    	</a-scene>
   </body>
                                                                                      
